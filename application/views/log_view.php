@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		
+
 		<meta name="robots" content="noindex">
-		
+
 		<title>CodeIgniter Log Viewer</title>
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//cdn.datatables.net/1.10.5/css/jquery.dataTables.min.css">
@@ -85,7 +85,7 @@
 			});
 
 			$('#apply').on('click', function() {
-				window.location.href = "<?php echo base_url('log/'); ?>" + $('#log_date').val();
+				window.location.href = "<?php echo base_url('log/'); ?>" + '/index/' +$('#log_date').val();
 			});
 		});
 		</script>
